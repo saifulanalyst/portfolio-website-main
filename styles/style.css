@@ -1,0 +1,357 @@
+/* font settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+/* colors */
+.dark-1{
+    color: #181818;
+}
+.dark-2{
+    color: #454545;
+}
+.dark-3{
+    color: #757575;
+}
+
+/* shared stylings */
+a{
+    text-decoration: none;
+    color: #181818;
+}
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.secondary-bg{
+    background-color: #fff8f3;
+}
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.section-description{
+    font-size: 18px;
+}
+.text-center{
+    text-align: center;
+}
+
+/* buttons */
+.btn-primary{
+    background-color: #fd6e0a;
+    border: 1px solid #fd6e0a;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 18px 36px;
+}
+.btn-primary:hover{
+    background-color: #fd9850;
+}
+.btn-secondary{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fd6e0a;
+    border-radius: 5px;
+    color: #fd6e0a;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 18px 36px;
+}
+.btn-secondary:hover{
+    background-color: rgba(255, 180, 109, 0.162);
+}
+
+/* header */
+.header{
+    background:
+        url(../assets/images/developer.png) no-repeat top left, 
+        url(../assets/images/header_bg.png) no-repeat bottom right,
+        #fff8f3;
+}
+
+/* navbar styling */
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 150px;
+}
+nav ul{
+    display: flex;
+    align-items: flex-end;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 50px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-title{
+    font-weight: 800;
+    font-size: 45px;
+}
+.nav-btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* banner styling */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 200px;
+}
+.banner-content{
+    max-width: 580px;
+    margin-bottom: 50px;
+}
+.banner-greet{
+    font-size: 45px;
+    font-weight: 600;
+}
+.banner-name{
+    font-size: 85px;
+    font-weight: bold;
+}
+.banner-desc{
+    font-size: 18px;
+}
+.btn-holder{
+    display: flex;
+    gap: 10px;
+}
+.banner-img{
+    display: flex;
+    
+}
+.banner-pic{
+    max-width: 520px;
+}
+
+/* about styling */
+.about{
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+    margin-top: 130px;
+}
+.about-items{
+    display: flex;
+    justify-content: space-around;
+}
+.item-desc{
+    font-weight: 600;
+}
+
+/* skill sheet styling */
+.skill-sheet{
+    margin-top: 130px;
+}
+.skills-container{
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+}
+.skill{
+    padding: 30px;
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    max-width: 17%;
+}
+
+/* resume summary styles */
+.resume-container{
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+}
+.resume-col{
+    max-width: 40%;
+}
+.col-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.exp-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.exp-subtitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+.exp-desc{
+    font-size: 16px;
+}
+
+/* footer class */
+
+.footy{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.footy-col{
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.social-btns{
+    display: flex;
+    gap: 24px;
+}
+.social-icon{
+    width: 35px;
+}
+.single-line{
+    padding: 0px 20px;
+    height: 64px;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    margin: 30px 0;
+    font-size: 16px;
+}
+.multi-line{
+    padding: 20px 20px;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    margin: 30px 0;
+    font-size: 16px;
+}
+
+.hide{
+    display: none;
+}
+
+/* responsiveness */
+
+/* for phones */
+@media screen and (max-width: 576px){
+    /* buttons */
+    .btn-primary{
+        scale: 0.75;
+    }
+    .btn-secondary{
+        scale: 0.75;
+    }
+    .btn-holder{
+        gap: 2px;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    /* header */
+    nav{
+        scale: 1;
+        /* width: 100%; */
+        padding: 0;
+        margin: 0 20px 50px 0px;
+        flex-wrap: wrap;
+    }
+    nav li{
+        margin: 0 0;
+    }
+    nav .btn-primary{
+        padding: 15px;
+    }
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .banner-content{
+        max-width: 90%;
+        text-align: right;
+    }
+    .banner-pic{
+        max-width: 100%;
+    }
+    .banner-name{
+        font-size: 65px;
+    }
+
+    /* about section */
+    .about{
+        padding: 10px;
+    }
+    .about-items{
+        flex-wrap: wrap;
+    }
+    .about-item{
+        scale: 0.85;
+    }
+
+    /* resume */
+    .resume-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .resume-col{
+        max-width: 90%;
+    }
+
+    /* skills */
+    .skills-container{
+        flex-direction: column;
+    }
+    .skill{
+        max-width: 90%;
+    }
+
+    /* footer */
+    .footy{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footy-col{
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+    nav{
+        margin: 0 40px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-pic{
+        max-width: 100%;
+    }
+    .about{
+        padding: 30px 50px;
+        max-width: 85%;
+        margin: 50px auto 0;
+    }
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        width: fit-content;
+    }
+    .skill{
+        max-width: 80%;
+    }
+}
