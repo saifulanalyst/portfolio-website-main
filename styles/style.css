@@ -22,6 +22,9 @@
 }
 
 /* shared stylings */
+body{
+    margin: 0px;
+}
 a{
     text-decoration: none;
     color: #181818;
@@ -74,9 +77,10 @@ main{
 /* header */
 .header{
     background:
-        url(../assets/images/developer.png) no-repeat top left, 
+        url(../assets/images/phda.png) no-repeat top left, 
         url(../assets/images/header_bg.png) no-repeat bottom right,
         #fff8f3;
+    bacground-size: cover;
 }
 
 /* navbar styling */
@@ -85,7 +89,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 150px;
+    margin: 0px 150px 0px 210px;
 }
 nav ul{
     display: flex;
@@ -115,7 +119,7 @@ nav li a{
 .banner{
     display: flex;
     justify-content: space-between;
-    margin: 0 35px 0 200px;
+    margin: 0 0px 0 210px;
 }
 .banner-content{
     max-width: 580px;
@@ -165,6 +169,7 @@ nav li a{
 }
 .skills-container{
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     justify-content: space-around;
 }
